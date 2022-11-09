@@ -4,7 +4,7 @@ body{
 
 #title{
     font-family: 'Merriweather Sans';
-    font-size: 45px;
+    font-size: 60px;
     color: black;
     text-align: center;
     margin-top: 150px;
@@ -53,6 +53,10 @@ body{
 
 .dark-mode-color{
     color: black;
+}
+
+.switch{
+    background-color: #93de87;
 }
 
 .circle-animation{
