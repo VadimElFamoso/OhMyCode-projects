@@ -45,15 +45,7 @@
     color: red;
 }
 
-#navbar-computer i:nth-child(1){
-    color: white;
-    position: fixed;
-    right: 20px;
-    top: 15px;
-    font-size: 3rem;
-}
-
-#navbar-computer i:nth-child(2){
+#navbar-computer i{
     color: #5c0715;
     position: fixed;
     top: 30px;
@@ -85,8 +77,9 @@
 #navbar-mobile #modal{
     transition: top 0.9s;
     background-color: #1E212B;
-    height: 100vh;
+    height: 0vh;
     position: fixed;
+    top: -100vh;
     left: 0;
     width: 100%;
 }
@@ -104,16 +97,27 @@
     display: none;
 }
 
+#navbar-mobile h2{
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    background-color: #1E212B;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 
 
-
-
-
+}
 
 
 /*Partie JS*/
 .change-modal{
     top: 0vh;
+    transition: 1.0s;
+}
+
+.change-text{
+    color: #1E212B;
 }
 
 /*Media queries*/
