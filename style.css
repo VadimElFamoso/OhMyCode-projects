@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/*Navbar ordinateur*/
+#navbar-computer{
+    background-color: #1E212B;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+#navbar-computer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2.3rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem; 
+}
+
+#navbar-computer a:hover{
+    background-color: #57467B;
+    transition: 1.5s;
+}
+
+#navbar-computer p{
+    font-weight: bold;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    font-size: 28px;
+}
+
+#navbar-computer span:nth-child(1){
+    color: blue;
+}
+#navbar-computer span:nth-child(2){
+    color: white;
+}
+#navbar-computer span:nth-child(3){
+    color: red;
+}
+
+#navbar-computer i{
+    color: #5c0715;
+    position: fixed;
+    top: 30px;
+    left: 18px;
+    transform: rotate(45deg);
+}
+
+/*Navbar mobile*/
+#navbar-mobile #navbar-mobile-list{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-mobile #navbar-mobile-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+#navbar-mobile #navbar-mobile-list a:hover{
+    color: #57467B;
+}
+
+#navbar-mobile #modal{
+    transition: top 0.9s;
+    background-color: #1E212B;
+    height: 0vh;
+    position: fixed;
+    top: -100vh;
+    width: 100%;
+}
+
+#navbar-mobile i{
+    position: fixed;
+    z-index: 1;
+    color: white;
+    top: 14px;
+    right: 20px;
+    font-size: 3rem;
+}
+
+#navbar-mobile{
+    display: none;
+}
+
+#navbar-mobile h2{
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    background-color: #1E212B;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+/*Partie JS*/
+.change-modal{
+    transform: translateY(-50%);
+}
+
+.change-text{
+    color: #1E212B;
+}
+
+/*Media queries*/
+@media screen and (max-width : 700px){
+    #navbar-computer{
+        display: none;
+    }
+
+    #navbar-mobile{
+        display: block;
+    }
+
+}
+
+
+
